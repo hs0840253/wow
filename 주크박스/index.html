@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>대환장파티</title>
+	<style type="text/css">
+		.crowd{opacity: 0.8;}
+		.crowd:hover{opacity: 1;}
+		#mybody{background-color: black;}
+		#backcurtain{position: absolute; width: 1400px; margin-left: 50px; height: 700px;}
+		#bg{position: absolute;margin-left: 280px;  display: block; margin-top: 50px; width: 1000px; height: 600px;}
+		#frame{position: absolute; width: 300px; height: 400px;  display: block; margin-top: 140px; margin-left: 620px;}
+		#me1{position: absolute; margin-top: 230px;}
+		#me2{position: absolute; margin-top: 390px; margin-left: 320px;}
+		#clap{position: absolute; margin-top: 440px; margin-left:510px;}
+		#me3{position: absolute; margin-top: 410px; margin-left: 890px; width: 300px;}
+		#me4{position: absolute; margin-top: 390px; margin-left: 1170px; width: 350px;}
+		#a{position: absolute; margin-top: 110px; margin-left: 620px; width: 370px; opacity: 0;}
+		#b{position: absolute; margin-top: 190px; margin-left: 670px; width: 200px; height: 290px; opacity: 0;}
+		#c{position: absolute; margin-top: 190px; margin-left: 670px; width: 200px; height: 290px; opacity: 0;}
+		#d{position: absolute; margin-top: 190px; margin-left: 670px; width: 200px; height: 290px; opacity: 0;}
+		#e{position: absolute; margin-top: 190px; margin-left: 670px; width: 200px; height: 290px; opacity: 0;}
+
+
+
+	</style>
+</head>
+<body id="mybody">
+	<img src="backc.png" id="backcurtain">
+	<img src="back.jpg" id="bg">
+	<img src="frame.png" id="frame">
+	<img src="me1.gif" class="crowd" id="me1">
+	<img src="me2.gif" class="crowd" id="me2">
+	<img src="me3.gif" class="crowd" id="me3">
+	<img src="me4.gif" class="crowd" id="me4">
+	<img src="clap.gif" class="crowd" id="clap">
+
+	
+	<img src="drum.gif" id="a">
+	<img src="taita.gif" id="b">
+	<img src="zara.gif" id="c">
+	<img src="last.gif" id="d">
+	<img src="clapping.gif" id="e">
+	<audio src="drum.mp3" id="aa" loop></audio>
+	<audio src="taita.mp3" id="bb" loop></audio>
+	<audio src="zara.mp3" id="cc" loop></audio>
+	<audio src="last.mp3" id="dd" loop></audio>
+	<audio src="clap.mp3" id="ee" loop></audio>
+
+	<script type="text/javascript">
+		var astate = "off";
+		me1.onclick = function(){
+			if (astate == "off"){ aa.play(); astate="on";
+			a.style.opacity = "1";}
+			else{aa.pause(); astate="off";
+			a.style.opacity = "0";
+			}
+		}
+
+		var bstate = "off";
+		me2.onclick = function(){
+			if (bstate == "off"){ bb.play(); bstate="on";
+			b.style.opacity = "1";}
+			else{bb.pause(); bstate="off";
+			b.style.opacity = "0";
+			}
+		}
+
+		var cstate = "off";
+		me3.onclick = function(){
+			if (cstate == "off"){ cc.play(); cstate="on";
+			c.style.opacity = "1";}
+			else{cc.pause(); cstate="off";
+			c.style.opacity = "0";
+			}
+		}
+
+		var dstate = "off";
+		me4.onclick = function(){
+			if (dstate == "off"){ dd.play(); dstate="on";
+			d.style.opacity = "1";}
+			else{dd.pause(); dstate="off";
+			d.style.opacity = "0";
+			}
+		}
+
+		var estate = "off";
+		clap.onclick = function(){
+			if (estate == "off"){ ee.play(); estate="on";
+			e.style.opacity = "1";}
+			else{ee.pause(); estate="off";
+			e.style.opacity = "0";
+			}
+		}
+	</script>
+	
+
+</body>
+</html>
